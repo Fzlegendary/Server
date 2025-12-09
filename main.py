@@ -21,7 +21,7 @@ def handle_client(conn, addr):
     print(f"[CONNECTED] {addr} connected.")
     try:
         while True:
-            data = conn.recv(1024)  # Receive up to 1024 bytes
+            data = conn.recv(1024)   # Receive up to 1024 bytes
             if not data:
                 break  # Client disconnected
 
